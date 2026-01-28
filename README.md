@@ -2,7 +2,7 @@
 
 A simple task app I made for keeping track of assignments and stuff. Works pretty well for daily use.
 
-![Screenshot](./screenshots/homepage.png)
+![Screenshot](./screenshot/homepage.png)
 
 ## What it does
 
