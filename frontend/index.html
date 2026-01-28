@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  
+  <div class="container">
+    <header class="header">
+      <div class="header-left">
+        <h1 class="logo">my tasks</h1>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">all synced</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="task-stats">
+          <span id="task-count" class="stat-number">0</span>
+          <span class="stat-label">total</span>
+        </div>
+        <div class="task-stats">
+          <span id="completed-count" class="stat-number">0</span>
+          <span class="stat-label">done</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="add-task-section">
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          id="task-input" 
+          placeholder="what needs to be done?"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button id="add-btn" class="add-button">
+          <span class="btn-text">Add Task</span>
+          <span class="btn-icon">→</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="tasks-container">
+      <div class="section-header" id="pending-header" style="display: none;">
+        <span class="section-title">pending</span>
+        <span class="section-count" id="pending-count">0</span>
+      </div>
+      
+      <div class="tasks-list" id="tasks-list">
+        <!-- Tasks will be rendered here -->
+      </div>
+
+      <div class="section-header" id="completed-header" style="display: none;">
+        <span class="section-title">completed</span>
+        <span class="section-count" id="completed-tasks-count">0</span>
+      </div>
+
+      <div class="tasks-list" id="completed-tasks-list">
+        <!-- Completed tasks will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
